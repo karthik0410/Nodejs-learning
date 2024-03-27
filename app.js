@@ -1,8 +1,7 @@
-let http = require("http");
-let html = "<h1>This is a paragraph tag</h1>";
-http
-  .createServer(function (req, res) {
-    res.write(html);
-    res.end();
-  })
-  .listen(8081);
+const tutorial = require("./Modules/modules");
+const eventEmitter = require("./eventsAemitter/event");
+console.log(tutorial.sum(1, 1));
+console.log(tutorial.Pi);
+console.log(tutorial.mathobj);
+console.log(eventEmitter.eventEmitter);
+console.log(eventEmitter.person);
